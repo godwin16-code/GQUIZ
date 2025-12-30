@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 3rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1px;
+    height: 100%;
+  }
+}
+
+.gquiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(252, 200, 181);
+}
+
+.logo h1{
+  font-size: 1rem;
+  color: rgb(252, 100, 45);
+}
+
+.account {
+  color: rgb(252, 100, 45);
+  font-weight: 600;
+}
+
+.welcome{
+  padding: 1rem;
+  color: rgb(252, 100, 45);
+  font-size: 1.5rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+.logo-container {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.logo-container h1 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.cta-container {
+  background-color: rgb(240, 243, 243);
+  opacity: 0.9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.subtitle {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(252, 225, 215);
+  border-radius: 8px;
+}
+
+.subtitle p {
+  margin: 40px auto;
+  font-weight: 600;
+  color: orangered;
+  font-size: 1.3rem;
+}
+
+.primary-button {
+  --btn-1: #ff7a2a; /* light */
+  --btn-2: #ff3b00; /* vivid */
+  display: inline-block;
+  background: linear-gradient(135deg, var(--btn-1) 0%, var(--btn-2) 60%);
+  color: #fff;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.motto {
+  display: grid;
+  grid-template: auto 1fr / auto;
+  gap: 1.5rem;
+  margin-top: 4rem;
+  padding: 0.5rem;
+}
+
+.motto-three {
+  grid-column: 1/4;
+}
+
+.motto-three p, .motto-one p, .motto-two p {
+  text-align: center;
+  border-top: 1px solid;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  border-color: #000;
+  border-width: 0.16rem;
+}
+
+footer {
+  border-top: 1px solid rgb(252, 200, 181);
+  display: block;
+}
+
+footer p {
+  text-align: center;
+  font-weight: 10;
+  font-size: 12.1px;
+}
