@@ -12,7 +12,15 @@
       <h1><span class="star">⭐</span>GQUIZ</h1>
     </div>
     <div class="account">
-      <span>my account</span>
+      <span>
+        <svg
+          class="account-icon"
+          viewBox="0 0 24 24"
+          aria-label="Account"
+        >
+          <path d="M12 12c2.7 0 4.9-2.2 4.9-4.9S14.7 2.2 12 2.2 7.1 4.4 7.1 7.1 9.3 12 12 12zm0 2.4c-3.3 0-9.8 1.7-9.8 4.9v2.4h19.6v-2.4c0-3.2-6.5-4.9-9.8-4.9z"/>
+      </svg>
+      </span>
     </div>
   </header>
   <main>
@@ -30,24 +38,34 @@
           </div>
         </div>
       </div>
-      <div class="motto">
-        <div class="motto-one">
-          <p>LEARN TO KNOW</p>
-        </div>
-        <div>
-          <span>💫</span>
-        </div>
-        <div class="motto-two">
-          <p>LEARN TO GROW</p>
-        </div>
-        <div class="motto-three">
-          <p>LEARN TO LIVE</p>
-        </div>
+      <div class="learn-row">
+        <span class="learn-text">LEARN TO KNOW</span>
+
+        <!-- Green circular arrow icon -->
+        <span class="learn-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="40" height="40" role="img">
+            <!-- Green circle background -->
+            <circle cx="24" cy="24" r="22" fill="#2DBE5F"/>
+            <!-- Two white circular arrows -->
+            <path d="M31.5 18.2c-1.9-3.2-5.6-5.2-9.6-4.8-4 .4-7.3 3.1-8.6 6.7"
+                  fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M14.3 20.2l1.5-3.8 3.9 1.3" fill="#FFFFFF"/>
+            <path d="M16.5 29.8c1.9 3.2 5.6 5.2 9.6 4.8 4-.4 7.3-3.1 8.6-6.7"
+                  fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M33.7 27.8l-1.5 3.8-3.9-1.3" fill="#FFFFFF"/>
+          </svg>
+        </span>
+
+        <span class="learn-text">LEARN TO GROW</span>
+      </div>
+
+      <div class="learn-row second">
+        <span class="learn-text">LEARN TO LIVE</span>
       </div>
     </section>
   </main>
-  <footer>
-    <p class="credit"><strong><i>Powered by: G-TECH</i></strong></p>
+  <footer class="credit">
+    Powered By: <span class="crd-name">G-TECH</span>
     <p id="lastModified"></p>
   </footer>
 </body>
