@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GQUIZ</title>
   <link rel="stylesheet" href="styles/gquiz.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="gquiz-header">
     <div class="logo">
-      <h1><span class="star">⭐</span>GQUIZ</h1>
+      <h1>
+        <svg
+          class="logo-star"
+          viewBox="0 0 100 95"
+          aria-hidden="true"
+        >
+          <polygon points="50,5 61,36 95,36 67,56 78,88 50,69 22,88 33,56 5,36 39,36"/>
+        </svg>
+        GQUIZ
+      </h1>
     </div>
     <div class="account">
       <span>
@@ -28,13 +40,30 @@
     <section>
       <div class="container">
         <div class="logo-container">
-          <span class="body-logo">⭐⭐⭐</span>
+          <div class="stars">
+            <!-- Left star -->
+            <svg class="star star-small" viewBox="0 0 100 95" aria-hidden="true">
+              <polygon points="50,5 61,36 95,36 67,56 78,88 50,69 22,88 33,56 5,36 39,36"/>
+            </svg>
+
+            <!-- Middle star (bigger) -->
+            <svg class="star star-large" viewBox="0 0 100 95" aria-hidden="true">
+              <polygon points="50,5 61,36 95,36 67,56 78,88 50,69 22,88 33,56 5,36 39,36"/>
+            </svg>
+
+            <!-- Right star -->
+            <svg class="star star-small" viewBox="0 0 100 95" aria-hidden="true">
+              <polygon points="50,5 61,36 95,36 67,56 78,88 50,69 22,88 33,56 5,36 39,36"/>
+            </svg>
+          </div>
+
           <h1>QUIZ TIME!</h1>
         </div>
+
         <div class="cta-container">
           <div class="subtitle">
             <p>Ready to challenge your brain? Let's get started</p>
-            <button class="primary-button">GET STARTED →</button>
+            <button class="primary-button"><a href="categories.html">GET STARTED →</a></button>
           </div>
         </div>
       </div>

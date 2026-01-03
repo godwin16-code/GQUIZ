@@ -25,10 +25,22 @@ body {
   border-bottom: 1px solid rgb(252, 200, 181);
 }
 
-.logo h1{
-  font-size: 1rem;
-  color: rgb(252, 100, 45);
+.logo h1 {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  font-family: 'Roboto';
 }
+
+.logo-star {
+  width: 22px;
+  height: 22px;
+  fill: rgb(145, 41, 4);
+  flex-shrink: 0;
+}
+
 
 .account {
   width: 35px;
@@ -59,6 +71,7 @@ body {
   padding: 1rem;
   color: rgb(252, 100, 45);
   font-size: 1.4rem;
+  font-family: 'Roboto';
 }
 
 section {
@@ -75,12 +88,37 @@ section {
 
 .logo-container {
   text-align: center;
-  font-size: 0.8rem;
 }
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 6px;
+}
+
+.star {
+  fill: #008000; /* gold */
+}
+
+.star-small {
+  width: 26px;
+  height: 24px;
+  opacity: 0.85;
+}
+
+.star-large {
+  width: 80px;
+  height: 60px;
+}
+
 
 .logo-container h1 {
   margin-bottom: 1rem;
   font-weight: 600;
+  font-size: 1.38rem;
+  font-family: 'Roboto';
 }
 
 .cta-container {
@@ -103,6 +141,7 @@ section {
   font-weight: 600;
   color: orangered;
   font-size: 1.3rem;
+  font-family: 'Roboto';
 }
 
 .primary-button {
@@ -120,6 +159,12 @@ section {
   letter-spacing: 0.3px;
   position: relative;
   overflow: hidden;
+  font-family: 'Roboto';
+}
+
+.primary-button a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .learn-row {
@@ -145,6 +190,7 @@ section {
   white-space: nowrap;
   border-top: 2px solid rgb(246, 140, 101);
   padding: 4px;
+  font-family: 'Roboto';
 }
 
 .learn-icon {
