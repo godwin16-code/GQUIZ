@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GQUIZ</title>
   <link rel="stylesheet" href="styles/gquiz.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="gquiz-header">
     <div class="logo">
-      <h1><span class="star"></span>GQUIZ</h1>
+      <h1>
+        <svg
+          class="logo-star"
+          viewBox="0 0 100 95"
+          aria-hidden="true"
+        >
+          <polygon points="50,5 61,36 95,36 67,56 78,88 50,69 22,88 33,56 5,36 39,36"/>
+        </svg>
+        GQUIZ
+      </h1>
     </div>
     <div class="account">
       <span>
@@ -24,7 +36,47 @@
     </div>
   </header>
   <main>
-    <h1 class="welcome">Choose a Category</h1>
+    <h1 class="welcome choose">Choose a Category</h1>
+    <div class="category-list">
+      <label class="category-option">
+        <input type="radio" name="category" />
+        <span class="radio"></span>
+        <span class="icon">🧠</span>
+        <span class="text">General Knowledge</span>
+      </label>
+
+      <label class="category-option">
+        <input type="radio" name="category" />
+        <span class="radio"></span>
+        <span class="icon">🎬</span>
+        <span class="text">Movies & Entertainment</span>
+      </label>
+
+      <label class="category-option">
+        <input type="radio" name="category"/>
+        <span class="radio"></span>
+        <span class="icon">🌍</span>
+        <span class="text">Geography</span>
+      </label>
+
+      <label class="category-option">
+        <input type="radio" name="category" />
+        <span class="radio"></span>
+        <span class="icon">💻</span>
+        <span class="text">Technology</span>
+      </label>
+
+      <label class="category-option">
+        <input type="radio" name="category" />
+        <span class="radio"></span>
+        <span class="icon">📜</span>
+        <span class="text">History</span>
+      </label>
+    </div>
+    <p class="pick">Pick a topic and test your <br> knowledge </p>
+    <div class="subtitle start">
+      <button class="primary-button">Start Quiz</button>
+    </div>
   </main>
   <footer class="credit">
     Powered By: <span class="crd-name">G-TECH</span>

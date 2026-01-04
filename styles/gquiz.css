@@ -116,7 +116,7 @@ section {
 
 .logo-container h1 {
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.38rem;
   font-family: 'Roboto';
 }
@@ -216,4 +216,86 @@ footer {
 .credit .crd-name {
   color: var(--text-color);
   font-weight: 700;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 2rem;
+}
+
+/* Card */
+.category-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid #000;
+  border-radius: 12px;
+  background: #fff4ee;
+  cursor: pointer;
+  max-width: 520px;
+  margin: 0px 15px;
+}
+
+.category-option:hover {
+  background: #ffe1d2;
+}
+
+/* Hide real radio */
+.category-option input {
+  display: none;
+}
+
+/* Custom radio */
+.radio {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ff8c00;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 50%;
+  display: none;
+}
+
+/* Show selected */
+.category-option input:checked + .radio::after {
+  display: block;
+}
+
+/* Text + icon */
+.icon {
+  font-size: 14px;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  font-family: 'Roboto';
+}
+
+.icon .text {
+  margin-right: 80px;
+}
+
+.start {
+  background: none;
+}
+
+.pick {
+  margin: 25px 19px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 1.5rem;
 }
