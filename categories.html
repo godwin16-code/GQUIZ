@@ -39,35 +39,35 @@
     <h1 class="welcome choose">Choose a Category</h1>
     <div class="category-list">
       <label class="category-option">
-        <input type="radio" name="category" />
+        <input type="radio" name="category" value="General Knowledge" />
         <span class="radio"></span>
         <span class="icon">🧠</span>
         <span class="text">General Knowledge</span>
       </label>
 
       <label class="category-option">
-        <input type="radio" name="category" />
+        <input type="radio" name="category" value="Movies & Entertainment" />
         <span class="radio"></span>
         <span class="icon">🎬</span>
         <span class="text">Movies & Entertainment</span>
       </label>
 
       <label class="category-option">
-        <input type="radio" name="category"/>
+        <input type="radio" name="category" value="Geography"/>
         <span class="radio"></span>
         <span class="icon">🌍</span>
         <span class="text">Geography</span>
       </label>
 
       <label class="category-option">
-        <input type="radio" name="category" />
+        <input type="radio" name="category" value="Technology" />
         <span class="radio"></span>
         <span class="icon">💻</span>
         <span class="text">Technology</span>
       </label>
 
       <label class="category-option">
-        <input type="radio" name="category" />
+        <input type="radio" name="category" value="History" />
         <span class="radio"></span>
         <span class="icon">📜</span>
         <span class="text">History</span>
@@ -75,12 +75,52 @@
     </div>
     <p class="pick">Pick a topic and test your <br> knowledge </p>
     <div class="subtitle start">
-      <button class="primary-button">Start Quiz</button>
+      <button id="startBtn" class="primary-button">Start Quiz</button>
+    </div>
+    
+    <!-- Quiz container (hidden until a category is selected and Start pressed) -->
+    <div class="quiz-container" id="quizContainer" aria-hidden="true">
+      <div class="quiz-header">
+        <span class="icon" id="quizIcon">🌍</span>
+        <div class="quiz-title">
+          <div class="category-title" id="categoryTitle">GEOGRAPHY</div>
+        </div>
+      </div>
+      <div class="question-meta">
+        <div class="question-number" id="questionNumber">QUESTION 1</div>
+        <div class="timer" id="timerIcon">⏱ <span id="timerCount" class="timer-count">15</span></div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-text" id="questionText">What is the largest continent by land area?</div>
+        <div class="options-list" id="optionsList">
+          <!-- Options inserted by script -->
+        </div>
+      </div>
+
+      <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
+      <div style="text-align:center">
+        <button id="nextBtn" class="next-btn">Next</button>
+      </div>
+      <div class="small-muted">Powered by G-TECH</div>
+    </div>
+    
+    <!-- Results container -->
+    <div class="quiz-container" id="resultsContainer" aria-hidden="true" style="display:none;">
+      <div class="results-card">
+        <div class="results-score" id="resultsScore">Score: 0 / 0</div>
+        <div id="resultsDetail" class="small-muted">You answered X out of Y correctly.</div>
+        <div class="results-actions">
+          <button id="retryBtn" class="next-btn">Retry</button>
+          <button id="backBtn" class="next-btn" style="background:#fff;color:#ff5b00;border:1px solid #ff8c00;box-shadow:none;">Back</button>
+        </div>
+      </div>
     </div>
   </main>
   <footer class="credit">
     Powered By: <span class="crd-name">G-TECH</span>
     <p id="lastModified"></p>
   </footer>
+  <script src="scripts/quiz.js"></script>
 </body>
 </html>
